@@ -1,0 +1,11 @@
+[manager]
+ratio=[1,4,3]
+
+[preview]
+max_width=2000
+max_height=4000
+
+[opener]
+edit = [
+	{ run = 'nvim "$@"', block = true },
+]
