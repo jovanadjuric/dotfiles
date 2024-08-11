@@ -1,13 +1,12 @@
 {
-  "bufferline.nvim": { "branch": "main", "commit": "0b2fd861eee7595015b6561dade52fb060be10c4" },
-  "catppuccin": { "branch": "main", "commit": "ba5f4153a5dad99505baba936bd0373534400ac3" },
+  "catppuccin": { "branch": "main", "commit": "18bab5ec4c782cdf7d7525dbe89c60bfa02fc195" },
   "lazy.nvim": { "branch": "main", "commit": "077102c5bfc578693f12377846d427f49bc50076" },
-  "neoconf.nvim": { "branch": "main", "commit": "56c4b2c79aaef0541672643a334523377beb7b28" },
+  "neoconf.nvim": { "branch": "main", "commit": "a6e09d22fda3ee5ce472e135a0df9b96d26706a7" },
   "neodev.nvim": { "branch": "main", "commit": "46aa467dca16cf3dfe27098042402066d2ae242d" },
-  "nvim-treesitter": { "branch": "master", "commit": "a7a3b9c10e8a5fe0da05ebb65db3ed1d164e612d" },
+  "nvim-treesitter": { "branch": "master", "commit": "079af15600ceaca92e6ce96e40d37955307aa11e" },
   "plenary.nvim": { "branch": "master", "commit": "a3e3bc82a3f95c5ed0d7201546d5d2c19b20d683" },
   "telescope.nvim": { "branch": "master", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "tokyonight.nvim": { "branch": "main", "commit": "b0e7c7382a7e8f6456f2a95655983993ffda745e" },
   "which-key.nvim": { "branch": "main", "commit": "6c1584eb76b55629702716995cca4ae2798a9cca" },
-  "yazi.nvim": { "branch": "main", "commit": "aad3207a0dfbba1bf79b68e81a5d675088ae3cc1" }
+  "yazi.nvim": { "branch": "main", "commit": "e3d4c782a12bced97bf8824527cdc82c383a88b6" }
 }
