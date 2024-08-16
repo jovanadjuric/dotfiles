@@ -49,5 +49,6 @@ vim.o.modeline = false
 vim.o.wildignore = '*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx'
 
 vim.g.mapleader = " "
+vim.opt.clipboard:append("unnamedplus")
 
 require("config.lazy")
