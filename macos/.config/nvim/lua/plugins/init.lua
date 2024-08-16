@@ -22,5 +22,14 @@ return {
     build = function()
         require("nvim-treesitter.install").update({ with_sync = true })()
     end,
-  }
+  },
+  { "neoclide/coc.nvim", branch = "release" },
+  { "fatih/vim-go" },
+  { "junegunn/fzf" },
+  { "junegunn/fzf.vim" },
+  { "stsewd/fzf-checkout.vim" },
+  { "jiangmiao/auto-pairs" },
+  { "voldikss/vim-floaterm" },
+  { "charlespascoe/vim-go-syntax" }
+
 }

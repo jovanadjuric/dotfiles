@@ -4,6 +4,7 @@ else
     -- ordinary Neovim
     vim.o.laststatus = 2
     vim.o.statusline = '%F%m%r%h%w%=(%{&ff}/%Y)\\ (line\\ %l/%L,\\ col\\ %c)'
+    require("config.coc")
 end
 
 vim.cmd('syntax on')
@@ -51,4 +52,8 @@ vim.o.wildignore = '*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xls
 vim.g.mapleader = " "
 vim.opt.clipboard:append("unnamedplus")
 
+
+require("config.floaterm")
+require("config.fzf")
 require("config.lazy")
+
