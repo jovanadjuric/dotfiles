@@ -1,5 +1,5 @@
 require("full-border"):setup()
-
+require("git"):setup()
 
 -- https://yazi-rs.github.io/docs/tips#symlink-in-status
 function Status:name()
