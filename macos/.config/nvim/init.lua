@@ -3,7 +3,7 @@ if vim.g.vscode then
 else
     -- ordinary Neovim
     vim.o.laststatus = 2
-    vim.o.statusline = '%F%m%r%h%w%=(%{&ff}/%Y)\\ (line\\ %l/%L,\\ col\\ %c)'
+--    vim.o.statusline = '%F%m%r%h%w%=(%{&ff}/%Y)\\ (line\\ %l/%L,\\ col\\ %c)'
     require("config.coc")
 end
 
@@ -56,4 +56,5 @@ vim.opt.clipboard:append("unnamedplus")
 require("config.floaterm")
 require("config.fzf")
 require("config.lazy")
+require("config.evil-lualine")
 

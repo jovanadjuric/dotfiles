@@ -30,6 +30,5 @@ return {
   { "stsewd/fzf-checkout.vim" },
   { "jiangmiao/auto-pairs" },
   { "voldikss/vim-floaterm" },
-  { "charlespascoe/vim-go-syntax" }
-
+  { "charlespascoe/vim-go-syntax" },
 }
