@@ -4,7 +4,6 @@ else
     -- ordinary Neovim
     vim.o.laststatus = 2
 --    vim.o.statusline = '%F%m%r%h%w%=(%{&ff}/%Y)\\ (line\\ %l/%L,\\ col\\ %c)'
-    require("config.coc")
 end
 
 vim.cmd('syntax on')
@@ -57,4 +56,4 @@ require("config.floaterm")
 require("config.fzf")
 require("config.lazy")
 require("config.evil-lualine")
-
+require("config.coc")
