@@ -1,5 +1,5 @@
 local keyset = vim.keymap.set
-local opts = {silent = true, nowait = true }
+local opts = { silent = true, nowait = true }
 
 -- Floaterm
-keyset("n", "<leader>t", ":FloatermToggle<cr>", opts)
+keyset("n", "<leader>tt", ":FloatermToggle<cr>", opts)
