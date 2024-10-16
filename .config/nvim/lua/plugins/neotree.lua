@@ -19,13 +19,6 @@ return {
     { "<leader>e", "<leader>fe", desc = "Explorer NeoTree (Root Dir)", remap = true },
     { "<leader>E", "<leader>fE", desc = "Explorer NeoTree (cwd)", remap = true },
     {
-      "<leader>ge",
-      function()
-        require("neo-tree.command").execute({ source = "git_status", toggle = true })
-      end,
-      desc = "Git Explorer",
-    },
-    {
       "<leader>be",
       function()
         require("neo-tree.command").execute({ source = "buffers", toggle = true })
@@ -72,7 +65,8 @@ return {
           function(state)
             local node = state.tree:get_node()
             local path = node:get_id()
-            vim.fn.setreg("+", path, "c")
+            local relative_path = vim.fn.fnamemodify(path, ":.")
+            vim.fn.setreg("+", relative_path, "c")
           end,
           desc = "Copy Path to Clipboard",
         },

@@ -46,6 +46,7 @@ vim.o.wildmenu = true
 vim.o.encoding = "utf-8"
 vim.o.linebreak = true
 vim.o.scrolloff = 3
+vim.o.wrap = true
 
 vim.o.confirm = true
 vim.o.modeline = false
