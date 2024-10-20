@@ -2,7 +2,7 @@
 -- Default keymaps that are always set: https://github.com/LazyVim/LazyVim/blob/main/lua/lazyvim/config/keymaps.lua
 -- Add any additional keymaps here
 
--- Start Codeium toggler
+-- Start - Codeium toggler
 local Source = require("codeium.source")
 
 local function is_codeium_enabled()
@@ -35,10 +35,9 @@ vim.api.nvim_set_keymap("n", "<leader>tC", "", {
   end,
   noremap = true,
 })
--- End Codeium toggler
+-- End - Codeium toggler
 
--- Close all buffers except current
--- Close all buffers except current
+-- Start - close all buffers except current
 vim.api.nvim_create_user_command("BufOnly", function()
   local current_buf = vim.api.nvim_get_current_buf()
   -- Get a list of all buffers
@@ -50,6 +49,7 @@ vim.api.nvim_create_user_command("BufOnly", function()
     end
   end
 end, {})
+-- End - close all buffers except current
 
 -- Map <leader>bo to BufOnly command
 vim.api.nvim_set_keymap("n", "<leader>bo", ":BufOnly<CR>", { noremap = true, silent = true })
