@@ -1,3 +1,5 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/jovana/.zsh/completions:"* ]]; then export FPATH="/Users/jovana/.zsh/completions:$FPATH"; fi
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -16,6 +18,7 @@ plugins=(
     git
 #   zsh-autosuggestions
     zsh-syntax-highlighting
+    vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
@@ -40,11 +43,15 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 alias vim="nvim"
 alias icat="kitten icat"
 alias d="kitten diff"
+alias lg="lazygit"
 alias yazi-ya=/
+alias docker-compose="docker compose"
 
 # PATH
 export PATH="/opt/homebrew/bin:$PATH" 
 export PATH="/usr/local/opt/libpq/bin:$PATH"
+export PATH="/Users/jovana/Library/Caches/Homebrew/yazi/target/release:$PATH"
+export PATH="$(go env GOPATH)/bin:$PATH"
 # for Apple Silicon
 export PATH=$PATH:/opt/homebrew/sbin
 
@@ -61,3 +68,7 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
+. "/Users/jovana/.deno/env"
+# Initialize zsh completions (added by deno install script)
+autoload -Uz compinit
+compinit
