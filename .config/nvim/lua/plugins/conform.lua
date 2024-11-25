@@ -17,6 +17,7 @@ return {
       graphql = { "prettier" },
       lua = { "stylua" },
       python = { "isort", "black" },
+      go = { "goimports", "gofumpt" },
     },
   },
 }
