@@ -44,3 +44,4 @@ vim.o.modeline = false
 vim.o.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx"
 
 vim.g.mapleader = " "
+vim.g.snacks_animate = false
