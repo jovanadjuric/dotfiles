@@ -16,24 +16,11 @@ HYPHEN_INSENSITIVE="true"
 
 plugins=(
     git
-#   zsh-autosuggestions
     zsh-syntax-highlighting
     vi-mode
 )
 
 source $ZSH/oh-my-zsh.sh
-
-# Insulter
-if [ -f /etc/bash.command-not-found ]; then
-	. /etc/bash.command-not-found
-fi
-
-# NVM
-source ~/.nvm/nvm.sh
-
-# Code command
-code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
-
 
 # p10k config
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
@@ -41,19 +28,12 @@ code () { VSCODE_CWD="$PWD" open -n -b "com.microsoft.VSCode" --args $* ;}
 
 # Aliases
 alias vim="nvim"
-alias icat="kitten icat"
-alias d="kitten diff"
 alias lg="lazygit"
 alias yazi-ya=/
-alias docker-compose="docker compose"
 
 # PATH
-export PATH="/opt/homebrew/bin:$PATH" 
-export PATH="/usr/local/opt/libpq/bin:$PATH"
-export PATH="/Users/jovana/Library/Caches/Homebrew/yazi/target/release:$PATH"
 export PATH="$(go env GOPATH)/bin:$PATH"
 # for Apple Silicon
-export PATH=$PATH:/opt/homebrew/sbin
 
 # Zoxide
 eval "$(zoxide init zsh)"
@@ -68,7 +48,5 @@ function yy() {
 	rm -f -- "$tmp"
 }
 
-. "/Users/jovana/.deno/env"
-# Initialize zsh completions (added by deno install script)
 autoload -Uz compinit
 compinit
