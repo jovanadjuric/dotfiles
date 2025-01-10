@@ -195,6 +195,14 @@ workspace_auto_back_and_forth yes
 set $i3lockwall sh ~/.config/i3/scripts/lockscreen.sh
 bindsym $mod+Ctrl+Shift+l exec --no-startup-id $i3lockwall
 
+# Screenshots
+bindsym --release Print exec import ~/Documents/photos/screenshot.png
+
+# Remove top bar
+default_border pixel 1
+default_floating_border pixel 1
+for_window [class="^.*"] border pixel 1
+
 
 # -- Start colors --
 # get color from XResource config - variable_name XResource fallback
@@ -239,7 +247,7 @@ set_from_resource $white2 color15 #ffffff
 
 # overrides
 client.focused          #0B5354 #0B5354 #FFFFFF #0B5354 #0B5354 
-#-- End colors --
+# -- End colors --
 
 
 # floating pop up automatically
@@ -262,4 +270,3 @@ bar {
         binding_mode       $background $red2 $white2
     }
 }
-
