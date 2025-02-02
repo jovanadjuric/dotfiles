@@ -29,11 +29,15 @@ source $ZSH/oh-my-zsh.sh
 # Aliases
 alias vim="nvim"
 alias lg="lazygit"
+alias lzd="lazydocker"
 alias yazi-ya=/
 
 # PATH
 export PATH="$(go env GOPATH)/bin:$PATH"
-# for Apple Silicon
+export PATH="$HOME/.local/bin:$PATH"
+
+export VISUAL=nvim
+export EDITOR="$VISUAL"
 
 # Zoxide
 eval "$(zoxide init zsh)"
@@ -50,3 +54,7 @@ function yy() {
 
 autoload -Uz compinit
 compinit
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
