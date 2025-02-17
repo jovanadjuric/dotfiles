@@ -18,3 +18,7 @@ end, {})
 
 -- Map <leader>bo to BufOnly command
 vim.api.nvim_set_keymap("n", "<leader>bo", ":BufOnly<CR>", { noremap = true, silent = true })
+
+-- Scroll by a third of window height (https://stackoverflow.com/a/16574696/1706778)
+vim.cmd([[ execute "set scroll=" .&lines / 3 ]])
+vim.cmd([[ au VimResized * execute "set scroll=" . &lines / 3 ]])
