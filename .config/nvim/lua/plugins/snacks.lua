@@ -7,5 +7,22 @@ return {
         inline = false,
       },
     },
+    picker = {
+      toggles = {
+        hidden = "m",
+      },
+      win = {
+        input = {
+          keys = {
+            ["<a-m>"] = { "toggle_hidden", mode = { "i", "n" } },
+          },
+        },
+        list = {
+          keys = {
+            ["<a-m>"] = "toggle_hidden",
+          },
+        },
+      },
+    },
   },
 }

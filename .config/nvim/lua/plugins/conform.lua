@@ -1,7 +1,8 @@
 --@type LazySpec
 return {
   "stevearc/conform.nvim",
-  event = { "BufReadPre", "BufNewFile" },
+  event = { "BufNewFile" },
+  format_on_save = nil,
   opts = {
     formatters_by_ft = {
       javascript = { "prettier" },
