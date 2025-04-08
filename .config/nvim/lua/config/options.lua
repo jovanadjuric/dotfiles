@@ -45,3 +45,4 @@ vim.o.wildignore = "*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xls
 
 vim.g.mapleader = " "
 vim.g.snacks_animate = false
+vim.g.ai_cmp = false
