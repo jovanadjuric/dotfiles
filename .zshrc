@@ -35,6 +35,7 @@ alias yazi-ya=/
 # PATH
 export PATH="$(go env GOPATH)/bin:$PATH"
 export PATH="$HOME/.local/bin:$PATH"
+export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 
 export VISUAL=nvim
 export EDITOR="$VISUAL"
