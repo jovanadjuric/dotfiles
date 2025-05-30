@@ -5,20 +5,36 @@ local lualine = require("lualine")
 
 -- Color table for highlights
 -- stylua: ignore
-local colors = {
-  bg       = '#0b0b0b',
-  fg       = '#bbc2cf',
-  yellow   = '#ECBE7B',
-  cyan     = '#008080',
-  darkblue = '#081633',
-  green    = '#9EBC9F',
-  orange   = '#FF8800',
-  violet   = '#a9a1e1',
-  magenta  = '#5E698E',
-  blue     = '#739393',
-  red      = '#ab4642',
-}
 
+-- Dark colors:
+-- local colors = {
+--   bg       = '#0b0b0b',
+--   fg       = '#bbc2cf',
+--   yellow   = '#ECBE7B',
+--   cyan     = '#008080',
+--   darkblue = '#081633',
+--   green    = '#9EBC9F',
+--   orange   = '#FF8800',
+--   violet   = '#a9a1e1',
+--   magenta  = '#5E698E',
+--   blue     = '#739393',
+--   red      = '#ab4642',
+-- }
+
+-- Light colors
+local colors = {
+  bg       = '#ffffff', -- light background
+  fg       = '#2e2e2e', -- dark foreground for readability
+  yellow   = '#b58900', -- darker mustard yellow
+  cyan     = '#007a7a', -- more saturated cyan
+  darkblue = '#205072', -- lighter and less dark variant
+  green    = '#5f875f', -- muted green
+  orange   = '#d75f00', -- deeper orange
+  violet   = '#6c71c4', -- solarized violet
+  magenta  = '#9055A2', -- brighter magenta for light BG
+  blue     = '#268bd2', -- solarized blue
+  red      = '#dc322f', -- solarized red
+}
 local conditions = {
   buffer_not_empty = function()
     return vim.fn.empty(vim.fn.expand("%:t")) ~= 1
