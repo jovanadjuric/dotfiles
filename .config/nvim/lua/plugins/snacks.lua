@@ -8,6 +8,14 @@ return {
       },
     },
     picker = {
+      sources = {
+        files = {
+          hidden = true,
+        },
+        grep = {
+          hidden = true,
+        },
+      },
       toggles = {
         hidden = "m",
       },
