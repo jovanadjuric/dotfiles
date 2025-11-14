@@ -72,7 +72,7 @@ on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
     7 = 'main'
     8 = 'main'
     9 = 'main'
-    0 = 'main'
+    10 = 'main'
     U = ['secondary', 'main']
 
 [mode.resize.binding]
